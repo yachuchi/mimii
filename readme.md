@@ -7,38 +7,7 @@ If you use the MIMII Dataset, please cite either of the following papers:
 
 ## Usage
 
-### 1. unzip dataset
-
-Please download .zip files from ZENODO (https://zenodo.org/record/3384388).  
-After downloading, .zip files locate under "./dataset" directory.
-
-```
-$ cd dataset/
-$ sh 7z.sh
-$ cd ..
-```
-
-**7z.sh** only support Ubuntu 16.04 LTS and 18.04 LTS.
-If you use Windows or Cent OS, please edit the scripts.
-
-### 2. run baseline system
-
-```
-$ python3 baseline.py
-```
-DAE (Deep AutoEncoder) based anomaly detection will run.  
-**model/**, **pickle/**, and **result/** directories will be genetrated.  
-When you want to change the parameter, please edit **baseline.yaml**.
-
-- model/ :  
-	Training results are located.  
-- pickle/ :  
-  Snapshots of the dataset are located.  
-- result/ :  
-	.yaml file (default = result.yaml) is located.  
-	In the file, all result AUCs are written.
-
-### 3. test result
+### test result
 
 |fan	|6dB		|0dB		|min6dB     |
 |-------|---------------|---------------|-----------|
