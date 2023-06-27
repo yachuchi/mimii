@@ -1,0 +1,12 @@
+slider_id_00_min6dB:
+  MSE: 0.45307443365695793
+  Train accuracy: 0.7789609827248279
+slider_id_02_min6dB:
+  MSE: 0.7702265372168284
+  Train accuracy: 0.8753057720649681
+slider_id_04_min6dB:
+  MSE: 0.7119741100323624
+  Train accuracy: 0.6915310634030721
+slider_id_06_min6dB:
+  MSE: 0.012944983818770227
+  Train accuracy: 0.6556816627922877
