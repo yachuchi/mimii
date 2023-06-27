@@ -433,13 +433,13 @@ if __name__ == "__main__":
         # model training
         print("============== MODEL TRAINING ==============")
         # training
+        lsvc  = LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
+                    intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+                    multi_class='ovr', penalty='l2', random_state=None, tol=0.0001,
+                    verbose=0)
         if os.path.exists(model_file):
             lsvc.load_weights(model_file)
         else:
-            lsvc  = LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
-          intercept_scaling=1, loss='squared_hinge', max_iter=1000,
-          multi_class='ovr', penalty='l2', random_state=None, tol=0.0001,
-          verbose=0)
             history = lsvc.fit(train_data, train_data_label)
 
         # evaluation
