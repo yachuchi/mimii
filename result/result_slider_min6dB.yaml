@@ -1,12 +1,20 @@
 slider_id_00_min6dB:
-  MSE: 0.45307443365695793
-  Train accuracy: 0.7789609827248279
+  Evaluation accuracy: 0.7216828478964401
+  Evaluation f1score: 0.7216828478964402
+  MSE: 0.2783171521035599
+  Train accuracy: 0.8849195496604221
 slider_id_02_min6dB:
-  MSE: 0.7702265372168284
-  Train accuracy: 0.8753057720649681
+  Evaluation accuracy: 0.8802588996763754
+  Evaluation f1score: 0.8802588996763754
+  MSE: 0.11974110032362459
+  Train accuracy: 0.9317577525563304
 slider_id_04_min6dB:
-  MSE: 0.7119741100323624
-  Train accuracy: 0.6915310634030721
+  Evaluation accuracy: 0.9288025889967637
+  Evaluation f1score: 0.9288025889967637
+  MSE: 0.07119741100323625
+  Train accuracy: 0.7487921053831077
 slider_id_06_min6dB:
-  MSE: 0.012944983818770227
-  Train accuracy: 0.6556816627922877
+  Evaluation accuracy: 0.15857605177993528
+  Evaluation f1score: 0.15857605177993528
+  MSE: 0.8414239482200647
+  Train accuracy: 0.6871780846893659

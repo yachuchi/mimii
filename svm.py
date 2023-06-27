@@ -29,7 +29,8 @@ import logging
 from tqdm import tqdm
 from sklearn.svm import LinearSVC
 from sklearn.metrics import mean_squared_error
-from sklearn.model_selection import cross_val_score
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import f1_score
 ########################################################################
 
 
@@ -457,12 +458,18 @@ if __name__ == "__main__":
             except:
                  logger.warning("File broken!!: {}".format(file_name))
 
-        accuracy = lsvc.score(train_data,train_data_label)
-        logger.info("Train accuracy : {}".format(accuracy))
-        evaluation_result["Train accuracy"] = float(accuracy)
+        train_accuracy = lsvc.score(train_data,train_data_label)
+        logger.info("Train accuracy : {}".format(train_accuracy))
+        evaluation_result["Train accuracy"] = float(train_accuracy)
         mse = mean_squared_error(y_true, y_pred)
         logger.info("MSE : {}".format(mse))
         evaluation_result["MSE"] = float(mse)
+        f1score = f1_score(y_true, y_pred, average='micro')
+        logger.info("Evaluation f1score : {}".format(f1score))
+        evaluation_result["Evaluation f1score"] = float(f1score)
+        eval_accuracy = accuracy_score(y_true, y_pred)
+        logger.info("Evaluation accuracy : {}".format(eval_accuracy))
+        evaluation_result["Evaluation accuracy"] = float(eval_accuracy)
         results[evaluation_result_key] = evaluation_result
         print("===========================")
     # output results
