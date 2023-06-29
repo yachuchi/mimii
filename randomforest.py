@@ -31,6 +31,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import f1_score
+from sklearn import metrics
 ########################################################################
 
 
@@ -336,8 +337,8 @@ def dataset_generator(target_dir,
     # 03 separate train & eval
     train_files = numpy.concatenate((normal_files[:train_abnormal], abnormal_files[:train_abnormal]), axis=0)
     train_labels = numpy.concatenate((normal_labels[:train_abnormal], abnormal_labels[:train_abnormal]), axis=0)
-    eval_files = numpy.concatenate((normal_files[train_abnormal:], abnormal_files[train_abnormal:]), axis=0)
-    eval_labels = numpy.concatenate((normal_labels[train_abnormal:], abnormal_labels[train_abnormal:]), axis=0)
+    eval_files = numpy.concatenate((normal_files[train_abnormal:len(abnormal_files)], abnormal_files[train_abnormal:len(abnormal_files)]), axis=0)
+    eval_labels = numpy.concatenate((normal_labels[train_abnormal:len(abnormal_files)], abnormal_labels[train_abnormal:len(abnormal_files)]), axis=0)
     logger.info("train_file num : {num}".format(num=len(train_files)))
     logger.info("eval_file  num : {num}".format(num=len(eval_files)))
    
@@ -386,6 +387,10 @@ if __name__ == "__main__":
         train_pickle = "{pickle}/train_{machine_type}_{machine_id}_{db}.pickle".format(pickle=param["pickle_directory"],
                                                                                        machine_type=machine_type,
                                                                                        machine_id=machine_id, db=db)
+        train_labels_pickle = "{pickle}/train_labels_{machine_type}_{machine_id}_{db}.pickle".format(pickle=param["pickle_directory"],
+                                                                                       machine_type=machine_type,
+                                                                                       machine_id=machine_id,
+                                                                                       db=db)
         eval_files_pickle = "{pickle}/eval_files_{machine_type}_{machine_id}_{db}.pickle".format(
                                                                                        pickle=param["pickle_directory"],
                                                                                        machine_type=machine_type,
@@ -410,8 +415,9 @@ if __name__ == "__main__":
 
         # dataset generator
         print("============== DATASET_GENERATOR ==============")
-        if os.path.exists(train_pickle) and os.path.exists(eval_files_pickle) and os.path.exists(eval_labels_pickle):
+        if os.path.exists(train_pickle) and os.path.exists(train_labels_pickle) and os.path.exists(eval_files_pickle) and os.path.exists(eval_labels_pickle):
             train_data = load_pickle(train_pickle)
+            train_data_label = load_pickle(train_labels_pickle)
             eval_files = load_pickle(eval_files_pickle)
             eval_labels = load_pickle(eval_labels_pickle)
         else:
@@ -427,13 +433,18 @@ if __name__ == "__main__":
                                                                 power=param["feature"]["power"])
 
             save_pickle(train_pickle, train_data)
+            save_pickle(train_labels_pickle, train_data_label)
             save_pickle(eval_files_pickle, eval_files)
             save_pickle(eval_labels_pickle, eval_labels)
 
         # model training
         print("============== MODEL TRAINING ==============")
         # training
-        rf  = RandomForestClassifier()
+        rf  = RandomForestClassifier(n_estimators=100, criterion='gini', max_depth=None, min_samples_split=2, 
+                                     min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_features='sqrt', 
+                                     max_leaf_nodes=None, min_impurity_decrease=0.0, bootstrap=True, 
+                                     oob_score=False, n_jobs=None, random_state=0, verbose=0, 
+                                     warm_start=False, class_weight=None, ccp_alpha=0.0, max_samples=None)
         if os.path.exists(model_file):
             rf.load_weights(model_file)
         else:
@@ -441,32 +452,30 @@ if __name__ == "__main__":
 
         # evaluation
         print("============== EVALUATION ==============")
+        y_pred = [0. for k in eval_labels]
+        y_true = eval_labels
+
         for num, file_name in tqdm(enumerate(eval_files), total=len(eval_files)):
             try:
                 data , datalabel = file_to_vector_array(file_name,
-                                            eval_labels[num],
-                                            n_mels=param["feature"]["n_mels"],
-                                            frames=param["feature"]["frames"],
-                                            n_fft=param["feature"]["n_fft"],
-                                            hop_length=param["feature"]["hop_length"],
-                                            power=param["feature"]["power"])
-                y_pred = rf.predict(data)
-                y_true = datalabel
-            except:
+                                        eval_labels[num],
+                                        n_mels=param["feature"]["n_mels"],
+                                        frames=param["feature"]["frames"],
+                                        n_fft=param["feature"]["n_fft"],
+                                        hop_length=param["feature"]["hop_length"],
+                                        power=param["feature"]["power"])
+
+                y_pred[num] = numpy.round(numpy.mean(rf.predict(data)))
+            except Exception as e:
+                 print(e)
                  logger.warning("File broken!!: {}".format(file_name))
 
         train_accuracy = rf.score(train_data,train_data_label)
         logger.info("Train accuracy : {}".format(train_accuracy))
         evaluation_result["Train accuracy"] = float(train_accuracy)
-        mse = mean_squared_error(y_true, y_pred)
-        logger.info("MSE : {}".format(mse))
-        evaluation_result["MSE"] = float(mse)
-        f1score = f1_score(y_true, y_pred, average='micro')
-        logger.info("Evaluation f1score : {}".format(f1score))
-        evaluation_result["Evaluation f1score"] = float(f1score)
-        eval_accuracy = accuracy_score(y_true, y_pred)
-        logger.info("Evaluation accuracy : {}".format(eval_accuracy))
-        evaluation_result["Evaluation accuracy"] = float(eval_accuracy)
+        score = metrics.roc_auc_score(y_true, y_pred)
+        logger.info("AUC : {}".format(score))
+        evaluation_result["AUC"] = float(score)
         results[evaluation_result_key] = evaluation_result
         print("===========================")
     # output results
