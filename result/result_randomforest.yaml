@@ -1,0 +1,144 @@
+fan_id_00_0dB:
+  AUC: 0.6097560975609756
+  Train accuracy: 1.0
+fan_id_00_6dB:
+  AUC: 0.9817073170731707
+  Train accuracy: 1.0
+fan_id_00_min6dB:
+  AUC: 0.5365853658536585
+  Train accuracy: 1.0
+fan_id_02_0dB:
+  AUC: 0.9861111111111112
+  Train accuracy: 1.0
+fan_id_02_6dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+fan_id_02_min6dB:
+  AUC: 0.8958333333333333
+  Train accuracy: 1.0
+fan_id_04_0dB:
+  AUC: 0.9857142857142857
+  Train accuracy: 1.0
+fan_id_04_6dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+fan_id_04_min6dB:
+  AUC: 0.942857142857143
+  Train accuracy: 1.0
+fan_id_06_0dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+fan_id_06_6dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+fan_id_06_min6dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+pump_id_00_0dB:
+  AUC: 0.896551724137931
+  Train accuracy: 0.9999858059387952
+pump_id_00_6dB:
+  AUC: 0.9482758620689655
+  Train accuracy: 1.0
+pump_id_00_min6dB:
+  AUC: 0.810344827586207
+  Train accuracy: 1.0
+pump_id_02_0dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+pump_id_02_6dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+pump_id_02_min6dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+pump_id_04_0dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+pump_id_04_6dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+pump_id_04_min6dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+pump_id_06_0dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+pump_id_06_6dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+pump_id_06_min6dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+slider_id_00_0dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+slider_id_00_6dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+slider_id_00_min6dB:
+  AUC: 0.9930555555555556
+  Train accuracy: 1.0
+slider_id_02_0dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+slider_id_02_6dB:
+  AUC: 1.0
+  Train accuracy: 1.0
+slider_id_02_min6dB:
+  AUC: 0.9166666666666666
+  Train accuracy: 1.0
+slider_id_04_0dB:
+  AUC: 0.9861111111111112
+  Train accuracy: 1.0
+slider_id_04_6dB:
+  AUC: 0.9861111111111112
+  Train accuracy: 1.0
+slider_id_04_min6dB:
+  AUC: 0.9444444444444444
+  Train accuracy: 1.0
+slider_id_06_0dB:
+  AUC: 0.8055555555555555
+  Train accuracy: 1.0
+slider_id_06_6dB:
+  AUC: 0.9722222222222222
+  Train accuracy: 1.0
+slider_id_06_min6dB:
+  AUC: 0.7222222222222222
+  Train accuracy: 1.0
+valve_id_00_0dB:
+  AUC: 0.7499999999999999
+  Train accuracy: 1.0
+valve_id_00_6dB:
+  AUC: 0.9166666666666667
+  Train accuracy: 1.0
+valve_id_00_min6dB:
+  AUC: 0.5625
+  Train accuracy: 1.0
+valve_id_02_0dB:
+  AUC: 0.625
+  Train accuracy: 1.0
+valve_id_02_6dB:
+  AUC: 0.8541666666666665
+  Train accuracy: 1.0
+valve_id_02_min6dB:
+  AUC: 0.5416666666666667
+  Train accuracy: 1.0
+valve_id_04_0dB:
+  AUC: 0.8333333333333333
+  Train accuracy: 1.0
+valve_id_04_6dB:
+  AUC: 0.9791666666666667
+  Train accuracy: 1.0
+valve_id_04_min6dB:
+  AUC: 0.75
+  Train accuracy: 1.0
+valve_id_06_0dB:
+  AUC: 0.8125
+  Train accuracy: 1.0
+valve_id_06_6dB:
+  AUC: 0.7916666666666666
+  Train accuracy: 1.0
+valve_id_06_min6dB:
+  AUC: 0.5625
+  Train accuracy: 1.0
