@@ -470,6 +470,9 @@ if __name__ == "__main__":
                  print(e)
                  logger.warning("File broken!!: {}".format(file_name))
 
+        train_accuracy = lsvc.score(train_data, train_data_label)
+        evaluation_result["train accuracy"] = float(train_accuracy)
+        logger.info("train accuracy : {}".format(train_accuracy))
         score = metrics.roc_auc_score(y_true, y_pred)
         logger.info("AUC : {}".format(score))
         evaluation_result["AUC"] = float(score)
