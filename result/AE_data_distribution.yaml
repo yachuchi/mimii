@@ -1,0 +1,192 @@
+fan_id_00_0dB:
+  eval_files_num: 814.0
+  train_feature_num: 186636.0
+  train_file_num: 604.0
+fan_id_00_6dB:
+  eval_files_num: 814.0
+  train_feature_num: 186636.0
+  train_file_num: 604.0
+fan_id_00_min6dB:
+  eval_files_num: 814.0
+  train_feature_num: 186636.0
+  train_file_num: 604.0
+fan_id_02_0dB:
+  eval_files_num: 718.0
+  train_feature_num: 203013.0
+  train_file_num: 657.0
+fan_id_02_6dB:
+  eval_files_num: 718.0
+  train_feature_num: 203013.0
+  train_file_num: 657.0
+fan_id_02_min6dB:
+  eval_files_num: 718.0
+  train_feature_num: 203013.0
+  train_file_num: 657.0
+fan_id_04_0dB:
+  eval_files_num: 696.0
+  train_feature_num: 211665.0
+  train_file_num: 685.0
+fan_id_04_6dB:
+  eval_files_num: 696.0
+  train_feature_num: 211665.0
+  train_file_num: 685.0
+fan_id_04_min6dB:
+  eval_files_num: 696.0
+  train_feature_num: 211665.0
+  train_file_num: 685.0
+fan_id_06_0dB:
+  eval_files_num: 722.0
+  train_feature_num: 202086.0
+  train_file_num: 654.0
+fan_id_06_6dB:
+  eval_files_num: 722.0
+  train_feature_num: 202086.0
+  train_file_num: 654.0
+fan_id_06_min6dB:
+  eval_files_num: 722.0
+  train_feature_num: 202086.0
+  train_file_num: 654.0
+pump_id_00_0dB:
+  eval_files_num: 286.0
+  train_feature_num: 266667.0
+  train_file_num: 863.0
+pump_id_00_6dB:
+  eval_files_num: 286.0
+  train_feature_num: 266667.0
+  train_file_num: 863.0
+pump_id_00_min6dB:
+  eval_files_num: 286.0
+  train_feature_num: 266667.0
+  train_file_num: 863.0
+pump_id_02_0dB:
+  eval_files_num: 222.0
+  train_feature_num: 276246.0
+  train_file_num: 894.0
+pump_id_02_6dB:
+  eval_files_num: 222.0
+  train_feature_num: 276246.0
+  train_file_num: 894.0
+pump_id_02_min6dB:
+  eval_files_num: 222.0
+  train_feature_num: 276246.0
+  train_file_num: 894.0
+pump_id_04_0dB:
+  eval_files_num: 200.0
+  train_feature_num: 186018.0
+  train_file_num: 602.0
+pump_id_04_6dB:
+  eval_files_num: 200.0
+  train_feature_num: 186018.0
+  train_file_num: 602.0
+pump_id_04_min6dB:
+  eval_files_num: 200.0
+  train_feature_num: 186018.0
+  train_file_num: 602.0
+pump_id_06_0dB:
+  eval_files_num: 204.0
+  train_feature_num: 288606.0
+  train_file_num: 934.0
+pump_id_06_6dB:
+  eval_files_num: 204.0
+  train_feature_num: 288606.0
+  train_file_num: 934.0
+pump_id_06_min6dB:
+  eval_files_num: 204.0
+  train_feature_num: 288606.0
+  train_file_num: 934.0
+slider_id_00_0dB:
+  eval_files_num: 712.0
+  train_feature_num: 220008.0
+  train_file_num: 712.0
+slider_id_00_6dB:
+  eval_files_num: 712.0
+  train_feature_num: 220008.0
+  train_file_num: 712.0
+slider_id_00_min6dB:
+  eval_files_num: 712.0
+  train_feature_num: 220008.0
+  train_file_num: 712.0
+slider_id_02_0dB:
+  eval_files_num: 534.0
+  train_feature_num: 247509.0
+  train_file_num: 801.0
+slider_id_02_6dB:
+  eval_files_num: 534.0
+  train_feature_num: 247509.0
+  train_file_num: 801.0
+slider_id_02_min6dB:
+  eval_files_num: 534.0
+  train_feature_num: 247509.0
+  train_file_num: 801.0
+slider_id_04_0dB:
+  eval_files_num: 356.0
+  train_feature_num: 110004.0
+  train_file_num: 356.0
+slider_id_04_6dB:
+  eval_files_num: 356.0
+  train_feature_num: 110004.0
+  train_file_num: 356.0
+slider_id_04_min6dB:
+  eval_files_num: 356.0
+  train_feature_num: 110004.0
+  train_file_num: 356.0
+slider_id_06_0dB:
+  eval_files_num: 178.0
+  train_feature_num: 137505.0
+  train_file_num: 445.0
+slider_id_06_6dB:
+  eval_files_num: 178.0
+  train_feature_num: 137505.0
+  train_file_num: 445.0
+slider_id_06_min6dB:
+  eval_files_num: 178.0
+  train_feature_num: 137505.0
+  train_file_num: 445.0
+valve_id_00_0dB:
+  eval_files_num: 238.0
+  train_feature_num: 269448.0
+  train_file_num: 872.0
+valve_id_00_6dB:
+  eval_files_num: 238.0
+  train_feature_num: 269448.0
+  train_file_num: 872.0
+valve_id_00_min6dB:
+  eval_files_num: 238.0
+  train_feature_num: 269448.0
+  train_file_num: 872.0
+valve_id_02_0dB:
+  eval_files_num: 240.0
+  train_feature_num: 181692.0
+  train_file_num: 588.0
+valve_id_02_6dB:
+  eval_files_num: 240.0
+  train_feature_num: 181692.0
+  train_file_num: 588.0
+valve_id_02_min6dB:
+  eval_files_num: 240.0
+  train_feature_num: 181692.0
+  train_file_num: 588.0
+valve_id_04_0dB:
+  eval_files_num: 240.0
+  train_feature_num: 271920.0
+  train_file_num: 880.0
+valve_id_04_6dB:
+  eval_files_num: 240.0
+  train_feature_num: 271920.0
+  train_file_num: 880.0
+valve_id_04_min6dB:
+  eval_files_num: 240.0
+  train_feature_num: 271920.0
+  train_file_num: 880.0
+valve_id_06_0dB:
+  eval_files_num: 240.0
+  train_feature_num: 269448.0
+  train_file_num: 872.0
+valve_id_06_6dB:
+  eval_files_num: 240.0
+  train_feature_num: 269448.0
+  train_file_num: 872.0
+valve_id_06_min6dB:
+  eval_files_num: 240.0
+  train_feature_num: 269448.0
+  train_file_num: 872.0
