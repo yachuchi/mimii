@@ -4,14 +4,14 @@
 ```
 svm.py -> model:LinearSVC, evaluation: 1 wav to 1 label
 svm_1.py -> model:LinearSVC, evaluation: 1 feature to 1 label
-svm/yaml -> parameter setting
+svm.yaml -> parameter setting
 
 ```
 
 
 ## Usage
 
-###   AUC for all machines
+###   Accuracy for all machines
 
 |fan 	  |6dB			              |0dB              			|-6dB           	     	|
 |-------|-----------------------|-----------------------|-----------------------|
