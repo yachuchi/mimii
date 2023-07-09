@@ -1,0 +1,288 @@
+fan_id_00_0dB:
+  AUC: 0.6426057507138587
+  Avg Accuracy: 0.6154791154791155
+  Max Accuracy: 0.5
+  Max Error: 45.804717643178506
+  Mean Error: 6.2846511544696275
+fan_id_00_6dB:
+  AUC: 0.6752289479562207
+  Avg Accuracy: 0.6117936117936118
+  Max Accuracy: 0.5
+  Max Error: 301.7279811506047
+  Mean Error: 12.869063355988622
+fan_id_00_min6dB:
+  AUC: 0.5653460026924401
+  Avg Accuracy: 0.5466830466830467
+  Max Accuracy: 0.5
+  Max Error: 99.69972543728868
+  Mean Error: 6.523131937120119
+fan_id_02_0dB:
+  AUC: 0.8540358935762447
+  Avg Accuracy: 0.6880222841225627
+  Max Accuracy: 0.5
+  Max Error: 66.26026560944788
+  Mean Error: 5.907175980306028
+fan_id_02_6dB:
+  AUC: 0.9697007316827151
+  Avg Accuracy: 0.7590529247910863
+  Max Accuracy: 0.5
+  Max Error: 26.702895870577493
+  Mean Error: 5.798013095188821
+fan_id_02_min6dB:
+  AUC: 0.6890076892637395
+  Avg Accuracy: 0.6434540389972145
+  Max Accuracy: 0.5
+  Max Error: 60.56390157867734
+  Mean Error: 5.850088094951092
+fan_id_04_0dB:
+  AUC: 0.7720389087065663
+  Avg Accuracy: 0.6954022988505747
+  Max Accuracy: 0.5
+  Max Error: 42.79086119813826
+  Mean Error: 5.903030267594064
+fan_id_04_6dB:
+  AUC: 0.9076826529264104
+  Avg Accuracy: 0.7758620689655172
+  Max Accuracy: 0.5
+  Max Error: 25.658484083155123
+  Mean Error: 5.811746400630709
+fan_id_04_min6dB:
+  AUC: 0.5436814638657683
+  Avg Accuracy: 0.5272988505747126
+  Max Accuracy: 0.5
+  Max Error: 139.18852912649172
+  Mean Error: 7.891032485673518
+fan_id_06_0dB:
+  AUC: 0.960973289032466
+  Avg Accuracy: 0.7936288088642659
+  Max Accuracy: 0.5
+  Max Error: 78.06265302493742
+  Mean Error: 6.594598065755943
+fan_id_06_6dB:
+  AUC: 0.9824740448584648
+  Avg Accuracy: 0.7936288088642659
+  Max Accuracy: 0.6191135734072022
+  Max Error: 28.789576791740398
+  Mean Error: 6.772820274706728
+fan_id_06_min6dB:
+  AUC: 0.781600816445546
+  Avg Accuracy: 0.6814404432132964
+  Max Accuracy: 0.5
+  Max Error: 43.69318526280715
+  Mean Error: 7.6315108317774145
+pump_id_00_0dB:
+  AUC: 0.6381730157953933
+  Avg Accuracy: 0.5559440559440559
+  Max Accuracy: 0.5
+  Max Error: 57.69885595819206
+  Mean Error: 9.721041196558962
+pump_id_00_6dB:
+  AUC: 0.8669372585456502
+  Avg Accuracy: 0.5944055944055944
+  Max Accuracy: 0.5
+  Max Error: 51.127345991169996
+  Mean Error: 12.449662888956421
+pump_id_00_min6dB:
+  AUC: 0.5977798425350872
+  Avg Accuracy: 0.5664335664335665
+  Max Accuracy: 0.5
+  Max Error: 84.04193192129976
+  Mean Error: 7.570960772451315
+pump_id_02_0dB:
+  AUC: 0.4550766983199416
+  Avg Accuracy: 0.481981981981982
+  Max Accuracy: 0.5
+  Max Error: 90.66988503476549
+  Mean Error: 9.316491684523974
+pump_id_02_6dB:
+  AUC: 0.4934664394123854
+  Avg Accuracy: 0.3918918918918919
+  Max Accuracy: 0.5
+  Max Error: 115.5058155767442
+  Mean Error: 9.388658452824721
+pump_id_02_min6dB:
+  AUC: 0.5170846522197874
+  Avg Accuracy: 0.527027027027027
+  Max Accuracy: 0.5
+  Max Error: 57.68793795058573
+  Mean Error: 7.249987066626938
+pump_id_04_0dB:
+  AUC: 0.9430000000000001
+  Avg Accuracy: 0.65
+  Max Accuracy: 0.5
+  Max Error: 44.55068368156521
+  Mean Error: 8.220434019814732
+pump_id_04_6dB:
+  AUC: 0.9810000000000001
+  Avg Accuracy: 0.5
+  Max Accuracy: 0.6
+  Max Error: 34.75166044147023
+  Mean Error: 7.8372094179587295
+pump_id_04_min6dB:
+  AUC: 0.9145000000000001
+  Avg Accuracy: 0.735
+  Max Accuracy: 0.5
+  Max Error: 55.85065545274598
+  Mean Error: 6.830330188111377
+pump_id_06_0dB:
+  AUC: 0.8582276047673971
+  Avg Accuracy: 0.7598039215686274
+  Max Accuracy: 0.5
+  Max Error: 64.88640318238492
+  Mean Error: 6.71429294737172
+pump_id_06_6dB:
+  AUC: 0.8359284890426759
+  Avg Accuracy: 0.6568627450980392
+  Max Accuracy: 0.5
+  Max Error: 52.3567481973938
+  Mean Error: 7.998953007337965
+pump_id_06_min6dB:
+  AUC: 0.5850634371395618
+  Avg Accuracy: 0.5882352941176471
+  Max Accuracy: 0.5
+  Max Error: 187.08724909684145
+  Mean Error: 7.273027482039601
+slider_id_00_0dB:
+  AUC: 0.922839603585406
+  Avg Accuracy: 0.7907303370786517
+  Max Accuracy: 0.5
+  Max Error: 178.8235273786857
+  Mean Error: 14.426159910639647
+slider_id_00_6dB:
+  AUC: 0.9950527079914153
+  Avg Accuracy: 0.7205056179775281
+  Max Accuracy: 0.5
+  Max Error: 163.0107284074386
+  Mean Error: 8.452345781717595
+slider_id_00_min6dB:
+  AUC: 0.9497774902158818
+  Avg Accuracy: 0.7780898876404494
+  Max Accuracy: 0.5
+  Max Error: 71.59352654588675
+  Mean Error: 6.617197999005221
+slider_id_02_0dB:
+  AUC: 0.7782547097027591
+  Avg Accuracy: 0.7228464419475655
+  Max Accuracy: 0.5
+  Max Error: 123.85378236790363
+  Mean Error: 9.494973271594848
+slider_id_02_6dB:
+  AUC: 0.9070964664955322
+  Avg Accuracy: 0.7434456928838952
+  Max Accuracy: 0.5
+  Max Error: 78.04033887239059
+  Mean Error: 10.077472978065245
+slider_id_02_min6dB:
+  AUC: 0.7061538245732161
+  Avg Accuracy: 0.6910112359550562
+  Max Accuracy: 0.5
+  Max Error: 150.3925279805125
+  Mean Error: 7.717770075229434
+slider_id_04_0dB:
+  AUC: 0.8042229516475192
+  Avg Accuracy: 0.7752808988764045
+  Max Accuracy: 0.5
+  Max Error: 83.86788064117702
+  Mean Error: 9.475475479489267
+slider_id_04_6dB:
+  AUC: 0.8962567857593737
+  Avg Accuracy: 0.7640449438202247
+  Max Accuracy: 0.5
+  Max Error: 67.09365815672314
+  Mean Error: 9.452053210819265
+slider_id_04_min6dB:
+  AUC: 0.6513382148718596
+  Avg Accuracy: 0.5955056179775281
+  Max Accuracy: 0.5
+  Max Error: 60.94137680758007
+  Mean Error: 10.137781335745897
+slider_id_06_0dB:
+  AUC: 0.5259436939780331
+  Avg Accuracy: 0.5168539325842697
+  Max Accuracy: 0.5
+  Max Error: 68.95869402756514
+  Mean Error: 10.135563191006579
+slider_id_06_6dB:
+  AUC: 0.7799520262593107
+  Avg Accuracy: 0.7415730337078652
+  Max Accuracy: 0.5
+  Max Error: 54.00128078887277
+  Mean Error: 9.027616933247922
+slider_id_06_min6dB:
+  AUC: 0.5164751925261961
+  Avg Accuracy: 0.5168539325842697
+  Max Accuracy: 0.5
+  Max Error: 88.52446165983682
+  Mean Error: 9.426078790037982
+valve_id_00_0dB:
+  AUC: 0.5000353082409434
+  Avg Accuracy: 0.49159663865546216
+  Max Accuracy: 0.5
+  Max Error: 139.9984216975537
+  Mean Error: 11.294940704828683
+valve_id_00_6dB:
+  AUC: 0.6464232751924299
+  Avg Accuracy: 0.5798319327731093
+  Max Accuracy: 0.5
+  Max Error: 79.7341816265546
+  Mean Error: 9.777552448907294
+valve_id_00_min6dB:
+  AUC: 0.5659204858413953
+  Avg Accuracy: 0.5084033613445378
+  Max Accuracy: 0.5
+  Max Error: 114.08853019044821
+  Mean Error: 6.66949726560061
+valve_id_02_0dB:
+  AUC: 0.5702083333333334
+  Avg Accuracy: 0.5375
+  Max Accuracy: 0.5
+  Max Error: 99.77506489799893
+  Mean Error: 9.807205807315652
+valve_id_02_6dB:
+  AUC: 0.6690972222222222
+  Avg Accuracy: 0.6375
+  Max Accuracy: 0.5
+  Max Error: 68.568090298425
+  Mean Error: 8.356702035898657
+valve_id_02_min6dB:
+  AUC: 0.6159722222222223
+  Avg Accuracy: 0.5416666666666666
+  Max Accuracy: 0.5
+  Max Error: 182.0836357809385
+  Mean Error: 17.307697935260407
+valve_id_04_0dB:
+  AUC: 0.6005555555555555
+  Avg Accuracy: 0.5791666666666667
+  Max Accuracy: 0.5
+  Max Error: 232.04190749669078
+  Mean Error: 14.510669789473393
+valve_id_04_6dB:
+  AUC: 0.3386111111111111
+  Avg Accuracy: 0.4125
+  Max Accuracy: 0.5
+  Max Error: 274.16950638697483
+  Mean Error: 20.989858031555084
+valve_id_04_min6dB:
+  AUC: 0.5390972222222222
+  Avg Accuracy: 0.49583333333333335
+  Max Accuracy: 0.5
+  Max Error: 115.17328458825367
+  Mean Error: 7.965241744292448
+valve_id_06_0dB:
+  AUC: 0.624375
+  Avg Accuracy: 0.5708333333333333
+  Max Accuracy: 0.5
+  Max Error: 80.30609567506914
+  Mean Error: 9.956795319659618
+valve_id_06_6dB:
+  AUC: 0.7149305555555555
+  Avg Accuracy: 0.6333333333333333
+  Max Accuracy: 0.5
+  Max Error: 45.6235983958479
+  Mean Error: 8.29935076133552
+valve_id_06_min6dB:
+  AUC: 0.5568055555555556
+  Avg Accuracy: 0.5041666666666667
+  Max Accuracy: 0.5
+  Max Error: 72.30185354480905
+  Mean Error: 8.291785768285186
