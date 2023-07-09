@@ -30,6 +30,7 @@ from tqdm import tqdm
 from sklearn import metrics
 from keras.models import Model
 from keras.layers import Input, Dense
+from sklearn.metrics import accuracy_score
 ########################################################################
 
 
@@ -468,6 +469,7 @@ if __name__ == "__main__":
         # evaluation
         print("============== EVALUATION ==============")
         y_pred = [0. for k in eval_labels]
+        f_pred = [0. for k in eval_labels]
         y_true = eval_labels
 
         for num, file_name in tqdm(enumerate(eval_files), total=len(eval_files)):
@@ -483,6 +485,46 @@ if __name__ == "__main__":
             except:
                 logger.warning("File broken!!: {}".format(file_name))
 
+        # calculate the reconstruction error of train_files
+        train_error = numpy.mean(numpy.square(train_data - model.predict(train_data)), axis=1)
+
+        train_avg_error = numpy.mean(train_error)
+        evaluation_result["Mean Error"] = float(train_avg_error)
+        print("Avg Train data reconstruction error:", train_avg_error)
+
+        train_max_error = numpy.max(train_error)
+        evaluation_result["Max Error"] = float(train_max_error)
+        print("Max Train data reconstruction error:", train_max_error)
+
+        y_pred_avg, y_pred_max = [], []
+        for i in range(len(y_pred)):
+            if y_pred[i] < train_avg_error:
+                y_pred_avg.append(0)
+            else:
+                y_pred_avg.append(1)
+
+            if y_pred[i] < train_max_error:
+                y_pred_max.append(0)
+            else:
+                y_pred_max.append(1)
+
+        avg_score = metrics.accuracy_score(y_true, y_pred_avg)
+        max_score = metrics.accuracy_score(y_true, y_pred_max)
+        evaluation_result["Avg Accuracy"] = float(avg_score)
+        evaluation_result["Max Accuracy"] = float(max_score)
+        print("Avg Accuracy:", avg_score)
+        print("Max Accuracy:", max_score)
+
+        # threshold=numpy.mean(y_pred)
+        # for n in range(len(y_pred)):
+        #     if y_pred[n] >= threshold:
+        #         y_pred[n] = 1
+        #     else:
+        #         y_pred[n] = 0
+        # print(f'y_pred: {y_pred}')
+        # accuracy = metrics.accuracy_score(y_true, y_pred)
+        # logger.info("Eval accuracy : {}".format(accuracy))
+        # evaluation_result["Eval accuracy"] = float(accuracy)
         score = metrics.roc_auc_score(y_true, y_pred)
         logger.info("AUC : {}".format(score))
         evaluation_result["AUC"] = float(score)
