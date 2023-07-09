@@ -10,7 +10,7 @@ logisticregression.yaml -> parameter setting
 
 ## Usage
 
-###   AUC for all machines
+###   Accuracy for all machines
 
 |fan 	  |6dB			              |0dB              			|-6dB           	     	|
 |-------|-----------------------|-----------------------|-----------------------|
