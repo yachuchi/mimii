@@ -10,7 +10,7 @@ If you use the MIMII Dataset, please cite either of the following papers:
 baseline.py---------autoencoder code
 baseline.yaml-------autoencoder parameter setting
 requirements.txt----package to use MIMII dataset baseline
-result--------------folder to save testing result
+result--------------folder to save testing result(AE_data_distribution.yaml: data distribution, AE_result_accuracy.yaml: result)
 model---------------folder to save model loss
 dataset-------------folder to save dataset
 ```
