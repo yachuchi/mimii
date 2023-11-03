@@ -13,6 +13,7 @@ import pickle
 import os
 import sys
 import glob
+import torch
 ########################################################################
 
 
@@ -216,7 +217,7 @@ def file_to_vector_array(file_name,
                                                      hop_length=hop_length,
                                                      n_mels=n_mels,
                                                      power=power)
-
+    
     # 03 convert melspectrogram to log mel energy
     log_mel_spectrogram = 20.0 / power * numpy.log10(mel_spectrogram + sys.float_info.epsilon)
 
@@ -411,7 +412,7 @@ if __name__ == "__main__":
                                                                                        machine_type=machine_type,
                                                                                        machine_id=machine_id,
                                                                                        db=db)
-        model_file = "{model}/model_{machine_type}_{machine_id}_{db}.hdf5".format(model=param["model_directory"],
+        model_file = "{model}/unsupervisedmodel_AE_{machine_type}_{machine_id}_{db}.pth".format(model=param["model_directory"],
                                                                                   machine_type=machine_type,
                                                                                   machine_id=machine_id,
                                                                                   db=db)
@@ -464,7 +465,7 @@ if __name__ == "__main__":
 
             visualizer.loss_plot(history.history["loss"], history.history["val_loss"])
             visualizer.save_figure(history_img)
-            model.save_weights(model_file)
+            torch.save(model,model_file)
 
         # evaluation
         print("============== EVALUATION ==============")
