@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 """
- @file   svm.py
- @brief  Ccode of SVM anomaly detection used experiment in [1].
- @author yachu,chi
+ @file   decisiontree.py
+ @author yachu,chi and minglun,lee
  Copyright (C) 2019 Hitachi, Ltd. All right reserved.
  [1] Harsh Purohit, Ryo Tanabe, Kenji Ichige, Takashi Endo, Yuki Nikaido, Kaori Suefusa, and Yohei Kawaguchi, "MIMII Dataset: Sound Dataset for Malfunctioning Industrial Machine Investigation and Inspection," arXiv preprint arXiv:1909.09347, 2019.
 """
@@ -13,6 +12,7 @@ import pickle
 import os
 import sys
 import glob
+import torch
 ########################################################################
 
 
@@ -399,7 +399,7 @@ if __name__ == "__main__":
                                                                                        machine_type=machine_type,
                                                                                        machine_id=machine_id,
                                                                                        db=db)
-        model_file = "{model}/model_{machine_type}_{machine_id}_{db}.hdf5".format(model=param["model_directory"],
+        model_file = "{model}/supervisedmodel_decisiontree_{machine_type}_{machine_id}_{db}.pth".format(model=param["model_directory"],
                                                                                   machine_type=machine_type,
                                                                                   machine_id=machine_id,
                                                                                   db=db)
@@ -442,10 +442,8 @@ if __name__ == "__main__":
                                      min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, 
                                      max_features=None, random_state=0, max_leaf_nodes=None, 
                                      min_impurity_decrease=0.0, class_weight=None, ccp_alpha=0.0)
-        # if os.path.exists(model_file):
-        #     dc.load_weights(model_file)
-        # else:
         history = dc.fit(train_data, train_data_label)
+        torch.save(dc,model_file)
 
         # evaluation
         print("============== EVALUATION ==============")
