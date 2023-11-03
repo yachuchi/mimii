@@ -1,8 +1,8 @@
 base_directory : ./dataset
-pickle_directory: ./pickle
+pickle_directory: ./pickle_supervised
 model_directory: ./model
-result_directory: ./result
-result_file: result.yaml
+result_directory: ./result_randomforest
+result_file: result_randomforest.yaml
 
 feature:
   n_mels: 64
